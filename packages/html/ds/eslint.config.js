@@ -6,5 +6,8 @@ export default defineConfig([
   {
     files: ['**/*.ts', '**/*.tsx'],
     extends: [eslintConfig],
+    rules: {
+      '@typescript-eslint/no-import-type-side-effects': 'error',
+    },
   },
 ]);
