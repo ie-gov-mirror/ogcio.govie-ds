@@ -1,5 +1,5 @@
 import type { StoryObj } from '@storybook/angular';
-import { GiParagraph } from '@/Paragraph';
+import { GiParagraph, GiParagraphDirective } from '@/Paragraph';
 import {
   paragraphMeta,
   Default as defaultStory,
@@ -104,6 +104,27 @@ export const AllAlignments: StoryObj = {
           <span class="gi-font-bold gi-font-primary">justify</span>
           <gi-paragraph align="justify" [dataTestId]="'paragraph-align-justify'">{{content}}</gi-paragraph>
         </div>
+      </div>
+    `,
+  }),
+};
+
+export const Directive: StoryObj = {
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'Adds the `gi-paragraph` styling to a plain `p`, with the same sizes, alignment and whitespace handling.',
+      },
+    },
+  },
+  render: () => ({
+    props: { content: paragraphMeta.loremIpsum },
+    moduleMetadata: { imports: [GiParagraphDirective] },
+    template: `
+      <div class="gi-flex gi-flex-col gi-gap-2">
+        <p giParagraph size="sm">{{content}}</p>
+        <p giParagraph align="center">{{content}}</p>
       </div>
     `,
   }),
