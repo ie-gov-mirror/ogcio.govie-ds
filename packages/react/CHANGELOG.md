@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.49.0](https://github.com/ogcio/govie-ds/compare/react-lib-v1.48.0...react-lib-v1.49.0) (2026-10-05)
+
+
+### Features
+
+* **AB#41718:** add stories for sidenav family ([5f2a39d](https://github.com/ogcio/govie-ds/commit/5f2a39d8daa6de82ea805a3fb3fce11384c95801))
+
+
+### Bug Fixes
+
+* **AB#41718:** align SideNavHeading inset with items ([7b2eb69](https://github.com/ogcio/govie-ds/commit/7b2eb69cab75282c79a38e058a32bc3b46f7fe0b))
+
+
+### Miscellaneous Chores
+
+* **AB#41718:** align SideNav stories with their args and public API ([e051e7a](https://github.com/ogcio/govie-ds/commit/e051e7a41edd38e2e445c5d7e17617aa14608e50))
+* **AB#43755:** extract Paragraph and InsetText styles into their own modules ([80af6c8](https://github.com/ogcio/govie-ds/commit/80af6c80bd1130e36478ff1dc254f05a43dc912a))
+
 ## [1.48.0](https://github.com/ogcio/govie-ds/compare/react-lib-v1.47.0...react-lib-v1.48.0) (2026-09-22)
 
 

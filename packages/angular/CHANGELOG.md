@@ -1,5 +1,29 @@
 # Changelog
 
+## [0.4.0](https://github.com/ogcio/govie-ds/compare/angular-v0.3.0...angular-v0.4.0) (2026-10-05)
+
+
+### Features
+
+* **AB#39796:** run Angular Storybook play functions as Vitest tests ([40cd3b5](https://github.com/ogcio/govie-ds/commit/40cd3b5bab74b6570b18fc703d0302fb31be3689))
+* **AB#41718:** add stories for sidenav family ([5f2a39d](https://github.com/ogcio/govie-ds/commit/5f2a39d8daa6de82ea805a3fb3fce11384c95801))
+* **AB#43523:** add Angular typography directives for base elements ([a140fcf](https://github.com/ogcio/govie-ds/commit/a140fcfda8d3f312b35209a5daeab47553578f32))
+* **AB#43755:** add Angular typography wrappers with a native public API ([2b72bb8](https://github.com/ogcio/govie-ds/commit/2b72bb841de882253dbc59d0136a225dc1662180))
+
+
+### Bug Fixes
+
+* **AB#41718:** align SideNavHeading inset with items ([7b2eb69](https://github.com/ogcio/govie-ds/commit/7b2eb69cab75282c79a38e058a32bc3b46f7fe0b))
+
+
+### Miscellaneous Chores
+
+* **AB#39796:** build the Angular library with `ng build` ([59e0fce](https://github.com/ogcio/govie-ds/commit/59e0fce57668b769109d6fafdbcb7414a9793858))
+* **AB#39796:** bump Angular Storybook to 10.6.0 ([fa2dd8c](https://github.com/ogcio/govie-ds/commit/fa2dd8c474a0551d208f8421f47f25ed7f6626a7))
+* **AB#39796:** move Angular Storybook to `@storybook/angular-vite` ([e0916ee](https://github.com/ogcio/govie-ds/commit/e0916ee67d8a1c20cecf0751fcd2f167aa94d0a0))
+* **AB#41718:** align SideNav stories with their args and public API ([e051e7a](https://github.com/ogcio/govie-ds/commit/e051e7a41edd38e2e445c5d7e17617aa14608e50))
+* **AB#43755:** extract Paragraph and InsetText styles into their own modules ([80af6c8](https://github.com/ogcio/govie-ds/commit/80af6c80bd1130e36478ff1dc254f05a43dc912a))
+
 ## [0.3.0](https://github.com/ogcio/govie-ds/compare/angular-v0.2.0...angular-v0.3.0) (2026-09-22)
 
 
