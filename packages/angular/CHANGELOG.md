@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.6.1](https://github.com/ogcio/govie-ds/compare/angular-v0.6.0...angular-v0.6.1) (2026-11-09)
+
+
+### Bug Fixes
+
+* **AB#38397:** keep links focusable when aria-hidden is "false" ([cab750f](https://github.com/ogcio/govie-ds/commit/cab750fd692c912e74d4efc7da76e18f7eb31daf))
+* **AB#44292:** add background to side-nav-item selected ([f3eb2f6](https://github.com/ogcio/govie-ds/commit/f3eb2f668b77001b05b72df05a1336cc901701d6))
+* **AB#44733:** accept string aria-hidden values on text and paragraph atoms ([4e75cb2](https://github.com/ogcio/govie-ds/commit/4e75cb229fe27d6be654a925db62d35de79ecc82))
+* **AB#44733:** document className and styles only in the React Text story ([dfe8320](https://github.com/ogcio/govie-ds/commit/dfe83207fb7afe9298cab6e414eb4417540c9fa8))
+
+
+### Miscellaneous Chores
+
+* **AB#40082:** publish angular storybook to PRD ([#1115](https://github.com/ogcio/govie-ds/issues/1115)) ([2378a98](https://github.com/ogcio/govie-ds/commit/2378a98899a8042026af779c3c478fc7a49a3935))
+* **AB#43036:** compose static list classes through tv ([749264b](https://github.com/ogcio/govie-ds/commit/749264b2489562532f04984dc2b9c5d4446a1464))
+
 ## [0.6.0](https://github.com/ogcio/govie-ds/compare/angular-v0.5.0...angular-v0.6.0) (2026-11-03)
 
 
