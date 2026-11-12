@@ -1,5 +1,6 @@
 import { booleanAttribute, Component, EventEmitter, Input, Output } from '@angular/core';
 import CoreSideNavGroup, { type Props } from '../atoms/sidenav/SideNavGroup';
+import type { Style } from '../types';
 
 @Component({
   selector: 'gi-side-nav-group',
@@ -46,7 +47,7 @@ import CoreSideNavGroup, { type Props } from '../atoms/sidenav/SideNavGroup';
 })
 export class GiSideNavGroup {
   @Input() class = '';
-  @Input() style: Props['styles'];
+  @Input() style: Style | undefined;
   @Input() label?: string;
   @Input({ transform: booleanAttribute }) open = false;
   @Input({ transform: booleanAttribute }) disabled = false;

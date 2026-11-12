@@ -1,37 +1,42 @@
 import { booleanAttribute, Component, Directive, EventEmitter, Input, Output } from '@angular/core';
+import CoreSideNavItem from '../atoms/sidenav/SideNavItem';
 import CoreSideNavItemLink, { type Props } from '../atoms/sidenav/SideNavItemLink';
+import CoreSideNavItemAction from '../atoms/sidenav/SideNavItemAction';
 import sideNavItemClasses from '../atoms/sidenav/SideNavItem.styles';
+import type { Style } from '../types';
 
 @Component({
   selector: 'gi-side-nav-item-link',
   standalone: true,
-  imports: [CoreSideNavItemLink],
+  imports: [CoreSideNavItemLink, CoreSideNavItem, CoreSideNavItemAction],
   template: `
-    <core-side-nav-item-link
-      [href]="href"
-      [className]="class"
-      [styles]="style"
-      [selected]="selected"
-      [external]="external"
-      [target]="target"
-      [rel]="rel"
-      [download]="download"
-      [id]="id"
-      [ariaCurrent]="ariaCurrent"
-      [ariaLabel]="ariaLabel"
-      [ariaLabelledBy]="ariaLabelledBy"
-      [ariaDescribedBy]="ariaDescribedBy"
-      [ariaHidden]="ariaHidden || undefined"
-      [tabIndex]="tabIndex"
-      [lang]="lang"
-      [dataTestId]="dataTestId"
-      (onClick)="itemClick.emit($event)"
-    >
-      <ng-content />
-      <ng-container ngProjectAs="[actions]">
+    <core-side-nav-item [ariaHidden]="ariaHidden">
+      <core-side-nav-item-link
+        [href]="href"
+        [className]="class"
+        [styles]="style"
+        [selected]="selected"
+        [external]="external"
+        [target]="target"
+        [rel]="rel"
+        [download]="download"
+        [id]="id"
+        [ariaCurrent]="ariaCurrent"
+        [ariaLabel]="ariaLabel"
+        [ariaLabelledBy]="ariaLabelledBy"
+        [ariaDescribedBy]="ariaDescribedBy"
+        [ariaHidden]="ariaHidden || undefined"
+        [tabIndex]="tabIndex"
+        [lang]="lang"
+        [dataTestId]="dataTestId"
+        (onClick)="itemClick.emit($event)"
+      >
+        <ng-content />
+      </core-side-nav-item-link>
+      <core-side-nav-item-action>
         <ng-content select="[actions]" />
-      </ng-container>
-    </core-side-nav-item-link>
+      </core-side-nav-item-action>
+    </core-side-nav-item>
   `,
   styles: [':host { display: contents; }'],
   host: {
@@ -56,7 +61,7 @@ import sideNavItemClasses from '../atoms/sidenav/SideNavItem.styles';
 })
 export class GiSideNavItemLink {
   @Input() class = '';
-  @Input() style: Props['styles'];
+  @Input() style: Style | undefined;
   @Input({ required: true }) href!: Props['href'];
   @Input({ transform: booleanAttribute }) selected = false;
   @Input({ transform: booleanAttribute }) external = false;

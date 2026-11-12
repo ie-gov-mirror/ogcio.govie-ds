@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import CoreSideNav, { type Props } from '../atoms/sidenav/SideNav';
+import type { Style } from '../types';
 
 @Component({
   selector: 'gi-side-nav',
@@ -29,7 +30,7 @@ import CoreSideNav, { type Props } from '../atoms/sidenav/SideNav';
 })
 export class GiSideNav {
   @Input() class = '';
-  @Input() style: Props['styles'];
+  @Input() style: Style | undefined;
   @Input() id: Props['id'];
   @Input() ariaLabel: Props['ariaLabel'];
   @Input() ariaLabelledBy: Props['ariaLabelledBy'];
