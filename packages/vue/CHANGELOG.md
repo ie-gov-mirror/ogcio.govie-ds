@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.8.0](https://github.com/ogcio/govie-ds/compare/vue-v0.7.0...vue-v0.8.0) (2026-11-23)
+
+
+### Features
+
+* **AB#44526:** enable aria-current=page to visually distinguish active sidenavitem ([c13a555](https://github.com/ogcio/govie-ds/commit/c13a5553d14e85fe0df151afd71edb27d70952e2))
+* **AB#44526:** generate native router story for SideNavItemLink ([f783c8c](https://github.com/ogcio/govie-ds/commit/f783c8c481b6633ed81cdfe07ac073cfa22d1894))
+* **AB#44735:** expose the layout family through native Vue wrappers ([11b28d1](https://github.com/ogcio/govie-ds/commit/11b28d19af8d49b9b31e63c7d445ba662b6991c1))
+
+
+### Bug Fixes
+
+* **AB#44735:** add native class and style argTypes per framework ([a0dd5e0](https://github.com/ogcio/govie-ds/commit/a0dd5e06e1556acea86a31d476c25ef5414ec209))
+* **AB#44735:** remove className and styles from the Box meta ([745d3fc](https://github.com/ogcio/govie-ds/commit/745d3fc6b7057e4aa6c3c0b31d13a985c785a48b))
+
 ## [0.7.0](https://github.com/ogcio/govie-ds/compare/vue-v0.6.0...vue-v0.7.0) (2026-11-17)
 
 
